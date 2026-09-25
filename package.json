@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-warn-notices",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "WARN Act layoff notices — state-by-state.",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-c8afa01a50572e47e27b4f616bcd75d8d6106f1d2aa8ecc7e52066a2c8ded863",
+    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
   }
 }

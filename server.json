@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/warn-notices",
   "title": "Warn Notices",
   "description": "WARN Act layoff notices — state-by-state.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/warn-notices",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-warn-notices",
