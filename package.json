@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-warn-notices",
-  "version": "0.1.2",
-  "description": "WARN Act layoff notices — state-by-state.",
+  "version": "0.2.0",
+  "description": "WARN Act layoff notices — state-by-state. Fleet #623.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-warn-notices": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "warn-notices"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-warn-notices.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/warn-notices",
   "pipeworx": {
-    "sourceHash": "v1-d10c0bf136280cd58caf2ed282350f104c4c370d0b1b2204ed5c422148c373e2",
-    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
+    "mode": "gateway",
+    "slug": "warn-notices",
+    "gatewaySlug": "warn-notices",
+    "sourceHash": "v1-1d9c7a19e0d51761b109db3c2088801537b14e3171419097807ed37143aaab95",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
